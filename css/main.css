@@ -1,0 +1,1558 @@
+/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+    width: 100%;
+    /*min-width: 1400px;*/
+}
+
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+}
+
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+}
+
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+.masque{
+    /*border-radius: 50% 50% 50% 50%;*/
+    clip-path: polygon( 50% 0, 100% 38%, 80% 100%, 20% 100%, 0 38%);
+}
+
+.desktop{display: none;}
+/*.mobile{display: none;}*/
+
+@media only screen and (min-width: 1200px) {
+    div.owl-carousel.owl-theme.owl-loaded.owl-drag{display: none;}
+}
+
+
+/* Nav Fixe ====================================================== */
+
+.navFixe{
+    position: absolute;
+    top:100px;
+    z-index: 100;
+}
+
+.navFixe ul {
+    list-style: none;
+    margin: 0; padding: 0;
+    
+}
+
+.navFixe li {
+    /*padding-top: 7px;*/
+    
+}
+    .nav{
+        width: 80px;
+        height: 80px;
+        background-color: #000;
+        text-align: center;
+
+        color: #FFF;
+        font-family: 'Sacramento', cursive;
+        font-size: 3.75em;
+        margin: 0;
+        text-align: center;
+        margin-top: 16px;
+    }
+
+.navFixe li:hover:not(.navActive){
+        color: #ff3366;
+    }
+
+    .navActive{
+        background-color: #ff3366;
+        color: #FFF;
+    }
+
+
+
+    .navTop{
+        border-radius: 50% 50% 50% 0;
+        transform:rotate(135deg);
+      /*  position: absolute;
+        top: 0%;*/
+    }
+
+    #navTop{
+        transform:rotate(-135deg);
+        margin-bottom: 12px;
+        /*position: absolute;
+        left: 50%;
+        top*/: 40px;
+    }
+
+    .navWorks{
+        border-radius: 0 50% 50% 50%;
+        padding-top: 7px;
+        height: 73px;
+        margin-top: 270%;
+    }
+
+    .navAbout{
+        border-radius: 50% 0 50% 50%;
+        padding-top: 7px;
+        height: 73px;
+    }
+
+    .navContact{
+        border-radius: 50% 50% 50% 0;
+        padding-top: 7px;
+        height: 73px;
+    }    
+
+
+/* Fin Nav Fixe ==================================================== */
+
+
+/* Home ====================================================== */
+html, body{height: 100%;}
+.home{
+    background-color: #ff3366;
+    height: 100%; 
+/*    min-width: 1200px;*/
+    position: relative;
+    /*border:3px solid green;*/
+}
+
+
+    h1{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: 3.75em;
+        line-height: 0.9em;
+        color: #FFF;
+    }
+
+    h1 span{
+        font-size: 0.6em;
+    }
+
+    nav{
+        text-align: right;
+        position: absolute;
+        right: 7%;
+        bottom: 0%;
+    }
+
+    nav a{
+        font-family: 'Sacramento', cursive;
+        font-size: 8.75em;
+        line-height: 1.3em;
+        color: #000;
+        text-decoration: none;
+        text-align: right;
+        /*margin-right: 74px;*/
+    }
+
+    nav a:hover{
+        color: #FFF;
+    }
+
+
+
+  .bigLogo{
+        background-color: #000;
+        width: 920px;
+        height: 920px;
+       /* max-width: 920px;
+        max-height: 920px;*/
+        border-radius: 50% 50% 50% 0;
+        position: absolute; bottom: 0;  left:0;
+        text-align: center;
+        /*padding-top: 220px;*/
+        box-sizing: border-box;
+        /*transition: .5s;*/
+        z-index: 50;
+    }
+    .bigLogo img{
+        display: inline-block;
+        width: 60%;
+        margin-top: 260px;
+    }
+
+    .logo{/**/}
+
+    .hello{
+        background-color: #000;
+        width: 320px;
+        height: 320px;
+        border-radius: 50% 0 50% 50%;
+        position: absolute; top: 5%;  right:5%;
+
+    }
+
+    .home h2{
+        color: #ff3366;
+        font-size: 7.5em;
+        margin-top: 0;
+        line-height: 2.6em;
+        font-family: 'Courgette', cursive;
+        text-align: center;
+    }
+
+.home_Fleche{
+        position: absolute;
+        bottom: 2%;
+        left:50%;
+        margin-left:-35px;
+    }
+
+@media only screen and (min-width: 900px) {
+    .hello {      
+        width: 250px;
+        height: 250px;
+        border-radius: 50% 0 50% 50%;
+
+    }
+
+    h1{
+       font-size: 3em;
+        /*line-height: 1em; */
+    }
+
+    .bigLogo img{;
+        margin-top: 120px;
+    }
+
+    .home h2{
+        line-height: 2.8em;
+        font-size: 5.5em;
+    }
+
+    .bigLogo{
+        width: 500px;
+        height: 500px;
+    
+    }
+
+    nav a{
+        font-size: 7.4em;
+        line-height: 1.3;
+    }
+}
+
+
+
+
+
+/* Fin Home ====================================================== */
+
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.titre{
+    font-family: 'Sacramento', cursive;
+    color: #000000;
+    /*font-weight: 300;*/
+    font-size: 8.75em;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 6%;  
+    background: url(../img/Works_Filet.gif) no-repeat 344px 126px, url(../img/Works_Filet.gif) no-repeat 814px 126px;
+
+
+}
+
+
+
+
+/* MenuBook ====================================================== */
+/*
+.menu li{
+    display:inline-block;
+	float: left;
+}
+
+.menu ul{
+    list-style-type:none;
+	margin:0;
+	padding:0;
+    position: sticky;
+}
+*/
+
+.Book{
+    max-width: 765px;
+    padding-left: 228px;
+}
+
+.Projet{
+    overflow: hidden;
+/*    float: left;*/
+}
+
+.dropdownwrap1{
+    display: block;
+    display: none;
+    height: auto;
+    float: left;
+    position: absolute;
+    top: 255px;
+    background-color: red;
+}
+
+.dropdownwrap2{
+    display: none;
+/*    float: left;*/
+    position: absolute;
+    top: 255px;
+    background-color: red;
+}
+
+.dropdownwrap3{
+    display: none;
+    float: left;
+/*    position: absolute;*/
+    position: absolute;
+    left: 0;
+    top: 255px;
+    background-color: red;
+}
+
+.ProjetOuvert1{
+    display: none;
+/*    float: left;*/
+    position: relative;
+    top: 255px;
+    left: 0;
+    margin-top: 255px;
+}
+
+.ProjetVign1{
+    float: left;
+    overflow: hidden;
+}
+
+.ProjetOuvert2{
+/*    display: none;*/
+    position: relative;
+    top: 255px;
+}
+
+.ProjetVign2{
+    float: left;
+    position: absolute;
+    left: 0;
+}
+
+
+
+/* Fin MenuBook ====================================================== */
+
+
+
+/* Works ====================================================== */
+.works{
+    background-color: #FFF;
+    /*margin-top: 2000px;*/
+    padding-bottom: 5%;
+    /*height: 1200px;*/
+    /*border:3px solid red;*/
+    }
+
+    .navProjet{
+        text-align: center;
+        margin-top: -24px;
+        margin-bottom: 400px;
+    }
+
+    .pastille{
+        background-color: #cccccc;
+        width: 10px;
+        height: 10px;
+        border-radius: 50% 50% 50% 50%;
+        display: inline-block;
+        margin: 1px;
+        margin-bottom: 3%;
+    }
+
+    .pastilleActive{
+        background-color: #ff3366;
+    }
+
+    .pastille:hover{
+        background-color: #ff3366;
+    }
+
+    .vignProjets{
+        text-align: center;
+        padding-bottom: 1.6%;
+    }
+
+    .works img:nth-child(2){
+        margin: 0 1.6%;
+    }
+
+/* Fin Works ====================================================== */
+
+
+/* Vignettes ====================================================== */
+    h6{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 100;
+        font-size: 1.3em;
+        margin: 0;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        padding: 0;
+    }
+
+h6 span{
+    font-size: 0.7em;
+    font-style: italic;
+}
+
+    p .carouselProjects{
+        padding: 0;
+        margin: 0;
+    }
+
+    hr{
+        width: 22%;
+        border: 3px;
+        color: #FFFFFF;
+        background-color: #FFFFFF;
+        margin: auto;
+    }
+
+    .VignOn{
+        background-color: #ff3366;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .bulle1{
+        border-radius: 0 50% 50% 50%;
+    }
+
+    .bulle2{
+        border-radius: 50% 0 50% 50%;
+    }
+
+    .bulle3{
+        border-radius: 50% 50% 0 50%;
+    }
+
+    .bulle4{
+        border-radius: 50% 50% 50% 0;
+    }
+
+
+/* Fin Vignettes ====================================================== */
+
+
+
+
+
+/* Caroussel Projets ====================================================== */
+
+.cache{
+    width: 745px;
+    height: 510px;
+    position: absolute;
+    left: 228px;
+    overflow: hidden;
+    /*border: 1px solid red;*/
+}
+
+    .cacheBook{
+        background-color: purple;
+        /*border: 1px solid purple;*/
+        position: absolute;
+        left: 0;
+        top: 0;
+        /*z-index: 50;*/
+    }
+
+    .carousselProjets{
+        width: 3000px;
+        /*height: 510px;*/
+        /*text-align: center;*/
+        margin-bottom: 20px;
+        position: absolute;  
+        top: 0;
+        left: 0;
+        
+    } 
+
+    .screen{
+        /*display: inline-block;*/
+        /*padding-left: 20px;*/
+        float: left;
+        /*width: 765px;*/
+    }
+
+    .screen1{
+        /*border:1px solid yellow;*/
+        /*overflow: hidden;*/
+    }
+
+    .screen2{
+        /*border:1px solid green;*/
+    }
+
+
+    .rangee{
+        margin-bottom: 20px;
+    }
+
+    .Vign{
+        float: left;
+/*        margin-left: 20px;*/
+        margin-right: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        position: relative;
+    }
+
+.Vign a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+    .VignTop{
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        cursor: pointer;  
+        width: 235px;
+        height: 235px;
+        position: absolute;
+        left: 40px;
+        top: 2px;
+    }
+
+    div .Vign:first-child{
+        margin-left: 0;
+    }
+
+.Vign:hover .VignOn{
+    opacity: 1;
+}
+
+.VignOn {
+    background-color: rgba(255, 51, 102, 1);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 1px 1px 2px #df2553;
+    /* display: none; */
+    opacity: 0;
+    transition: 0.5s;
+    padding-top: 80px;
+}
+
+
+
+
+
+/* Fin Caroussel Projets ====================================================== */
+
+
+
+
+/* Portfolio ====================================================== */
+
+.portfolioContainer{
+    height: 780px;
+    overflow: hidden;
+    /*border:1px solid green;*/
+    padding-top: 120px;
+}
+
+.projets{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    max-width: 745px;
+    max-height: none;  
+    overflow: hidden;
+    margin-left: 100px;
+    width: 745px;
+    height:720px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.stopScrolling{
+    overflow: hidden;
+    position:fixed;
+}
+
+    .projets img{
+        margin-bottom: 20px;
+    }
+
+    .losange{
+        width: 20px;
+        height: 20px;
+        background-color: #ff3366;
+        transform:rotate(45deg);
+        position: absolute;
+        top: -10px;
+        left: 130px;
+        z-index: 60;
+    }
+
+    .ProjScroll{
+        position: absolute;
+        top: 726px;
+        left: 452px;
+        margin: auto;
+        z-index: 55;
+        opacity: 0.16;
+    }
+
+    .ptiLosange{
+        width: 6px;
+        height: 6px;
+        background-color: #666666;
+        transform:rotate(45deg);
+        margin: 0 6px 2px 6px;
+
+    }
+
+    .Btn_Close{
+        position: absolute;
+        top: -31px;
+        right: 15px;
+        cursor: pointer;
+        z-index: 400;
+    }
+
+    .Hover{
+        display: none;
+    }
+
+    /*.BtnCloseHover:hover{
+        display: none;
+    }*/
+
+    .infosProjet{
+        color: #FFF;
+        width: 235px;
+        margin-top: 42px;
+        position: absolute;
+        left: 865px;
+        top: 0;
+    }
+
+    .infosProjet h2{
+        font-size: 1.8em;
+        line-height: 1.2em;
+        margin: 0;
+/*        text-transform: uppercase;*/
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+
+    .genre{
+        display: inline-block;
+        
+    /*    border-style: solid;
+        border-width: 12.5px 15px 12.5px 0;
+        border-color: transparent blue transparent transparent;
+        background-color: #ff3366;*/
+    }
+
+    .triangle{
+        /*border:1px solid yellow;*/
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 12.5px 15px 12.5px 0;
+        border-color: transparent blue transparent transparent;
+    }
+
+    .infosProjet p{
+        font-size: 1.1em;
+        text-align: justify;
+    }
+
+    .infosProjet h3{
+        background: url(../img/Fleche_Drapeau.gif) no-repeat right;
+        font-size: 1.2em;
+        line-height: 1em;
+/*        text-transform: uppercase;*/
+        background-color: #ff3366;
+        margin: 0;
+        padding: 7px 40px 2px 7px;
+        display: inline;
+    }
+
+    /*.infosProjet a{
+        font-family:'Josefin Sans', sans-serif;
+        font-size: 0.7em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #FFF;
+    }*/
+
+    .navFolio{
+        position: absolute;
+        left: 865px;
+        top: 26px;
+        z-index: 50;
+    }
+    .navFolio a{
+        font-family:'Josefin Sans', sans-serif;
+        font-size: 0.7em;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #FFF;
+    }
+
+    .navFolio a:hover{
+        color: #ff3366;
+    }
+
+    .navFolio div{
+        display: inline-block;
+    }
+
+/*zone srcoll*/
+.portfolio {
+    background-color: #000;
+    height: 720px;
+}
+
+.taf{
+    position: relative;
+/*    left: 120px;*/
+    top: -42px;
+}
+
+
+
+.scroll{
+ max-width: 100%;
+  max-height: 100%;
+  position:absolute;
+  right: -20px;
+  padding-right: 20px;
+  overflow-y: scroll;
+}
+
+#mousewheel-prevented {
+    z-index: 200;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: -2.6rem;
+    opacity: 0;
+    padding: .8em 0;
+    color: #FFF;
+    font-size: .9em;
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+}
+
+.child {
+    position: relative;
+/*    left: 100px;*/
+    height: 720px;
+    width: 760px;
+/*    padding: 0 2em;*/
+    overflow: auto;
+}
+
+.child img{padding-bottom: 20px;}
+.child img:last-child{padding-bottom: 0;}
+
+.scrollable-content {
+    height: 100.1%;
+    width: 745px;
+/*    padding-top: .5em;*/
+}
+
+.boiteScroll{
+    position: relative;    
+    width: 745px;
+    left: 100px;   
+    overflow: hidden;
+}
+
+/* Fin Portfolio =================================================== */
+
+/* Citation ====================================================== */
+
+.citation{
+    background-color: #FFF;
+    padding: 12% 0;
+}
+    
+    .citation p{
+        text-align: center;
+        /*margin: 440px 0 0;*/
+        font-size: 3.75em;
+    }
+
+    .citation p:last-child{
+        font-family: 'Sacramento', cursive;
+        font-size: 1.8em;
+        color: #999999;
+        margin-top: 2%;
+        text-align: right;
+        padding-right: 4%;
+
+    }
+
+/* Fin Citation =================================================== */
+
+/* About =================================================== */
+
+.about{
+    background-color:#000; 
+    padding-bottom: 200px;
+}
+
+    #backgroundAbout{
+        width: 100%;
+    }
+
+   /* .containerBigRond{
+        width: 50%;
+        height: 50%;
+        border: 1px solid yellow;
+    }
+
+    .bigRond{
+        width: 100%;
+        height: 100%;
+        border-radius: 50% 50% 50% 0;
+        background-color: blue;
+    }*/
+
+    .about h2{
+        color: #FFF;
+    }
+
+    .about h3{
+        color: #999999;
+        text-align: center;
+        font-family: 'Sacramento', cursive;
+        font-size: 2em;
+        margin: 6px 0 12px 0;
+    }
+
+    .about h4{
+        color: #ff3366;
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .about h5{
+        color: #ff3366;
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        font-weight: 400;
+        margin: 10px 0 0 0;
+    }
+
+    .about p{
+        color: #FFF;
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1.2em;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .experiences{
+        max-width: 1000px;
+        margin: 0 auto 50px;
+        text-align: center;
+        background: url(../img/Filet_Experiences.gif) no-repeat 0 45px, url(../img/Filet_Col_About.gif) no-repeat 245px 154px, url(../img/Filet_Col_About.gif) no-repeat 500px 154px, url(../img/Filet_Col_About.gif) no-repeat 755px 154px;
+    }
+
+    .rubriqueContainer{
+        max-width: 1000px;
+        margin: 0 auto;
+
+        margin-top: 30px;
+    }
+
+    #experiences{
+        margin: 0 auto;
+        text-align: center;    
+    }
+
+    .rubrique{
+        width: 490px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+        background: url(../img/Filet_Experiences.gif) no-repeat 0 45px;
+        color: #ff3366;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        font-weight: 200;
+    }
+
+    .rubrique:first-child{
+        margin-right: 20px;
+    }
+
+    .rubrique ul{
+        padding-left: 0;
+    }
+
+    .rubrique li{
+        display: inline-block;
+        font-size: 1.1em;
+    }
+
+    .rubrique .ptiLosange{
+        /*padding-top: 13px;*/
+    }
+
+    #pictosCompetences{
+        margin-top: 30px;
+    }
+
+    #pictosCompetences img{
+        margin-right: 4px;
+    }
+
+    .col{
+        width: 235px;
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .experiences div:last-child{margin-right: 0;}
+
+    .colGauche{
+        width: 320px;
+        display: inline-block;
+        text-align: left;
+        color: #ff3366;
+    }
+
+    .colGauche .ptiLosange{margin: 10px 0px 8px 25px;}
+
+    .colDroite .ptiLosange{margin: 10px 0px 8px 140px;}
+
+    .colDroite{
+        width: 170px;
+        display: inline-block;
+        text-align: right;
+        color: #ff3366;
+    }
+
+    .colAbout li{display: block;}
+
+    .rubrique .txtNote{
+        color: #FFF;
+        font-size: 0.9em;
+    }
+
+    .Btn_CV{
+        margin: 150px auto 20px;
+        text-align: center;
+    }
+
+/* Fin About =================================================== */
+
+/* Contact =================================================== */
+
+.contact{
+    background: url(../img/Background_Contact.gif) no-repeat center 0 ;
+    background-color: #ff3366;
+/*    height: 1400px;*/
+    background-size: cover;
+/*    background: cover;*/
+    overflow: hidden;
+    padding-top: 200px;
+}
+
+    .container .contact{
+        /*padding-top: 550px;*/
+    }
+
+    .contact .titre{
+        background: url(../img/Contact_Filet.gif) no-repeat 344px 126px, url(../img/Contact_Filet.gif) no-repeat 814px 126px;
+        margin-bottom: 0;
+    }
+
+    .questio{
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .questio p{
+        text-align: center;
+        font-size: 1.3em;
+        margin: 0 auto 5px;
+    }
+
+    form{
+        /*text-align: center;*/
+        font-family: 'Josefin Sans', sans-serif;
+        text-transform: uppercase;
+    }
+
+    input{
+        margin-bottom: 30px;
+        padding-left:10px; 
+        padding-top: 4px;
+        width: 320px;
+        height: 30px;
+        background-color: #000;
+        border: none;
+        color: #999999;
+    }
+
+    textarea{
+        margin-bottom: 30px;
+        padding-left:10px; 
+        padding-top: 6px;
+        width: 320px;
+        height: 160px;
+        background-color: #000;
+        color: #999999;
+        border: none;
+    }
+
+    .message{
+        position: relative;
+    }
+
+    .message img {
+        position: absolute;
+        top: 144px;
+        left:130px;
+    }
+
+.contact .centrer{
+    text-align: center;
+}
+
+.contact .centrer img{
+    margin-top: 30px;
+}
+
+footer{
+    text-align: center;
+    padding-top: 260px;
+    max-height: 1600px;
+    width: 100%;
+}
+
+footer p{
+    font-weight: 300;
+}
+
+
+/* Fin Contact =================================================== */
+
+
+
+/*
+@media only screen and (max-width: 1200px){
+    .bigLogo {      
+        width: 250px;
+        height: 250px;
+        border-radius: 50% 0 50% 50%;
+
+    }
+*/
+/*
+
+ @media only screen and (max-width: 1200px) {
+     .container{max-width: 1200px;}
+       
+    .hello { 
+        position: absolute;
+        right: 35px;
+        width: 150px;
+        height: 150px;
+ 
+    }
+
+    h1{
+       font-size: 2.8em;
+    }
+
+    .bigLogo img{;
+        width: 60%;
+        margin-top: 120px;
+    }
+
+    .home h2{
+        line-height: 3em;
+        font-size: 3em;
+    }
+
+    .bigLogo{
+        width: 500px;
+        height: 500px;
+    
+    }
+
+    nav a{
+        line-height: 1.2;
+    }
+
+
+
+    .home_Fleche{
+        position: absolute;
+        bottom: 2%;
+        left:50%;
+        margin-left:-35px;
+    }
+     
+}
+*/
+
+@media only screen and (max-width: 1220px) {
+    
+/*Global ===================================================================*/
+    
+    .mobile{display: none;}
+    .titre{font-size: 4.4em;}
+    .titre img{max-width: 8%;}
+    .FiletG{margin-right: 10px;}
+    .FiletD{margin-left: 8px;}
+    .desktop{display: inline-block}
+    
+    html .container{
+        max-width: 900px;
+        width: auto;
+        padding: 0 20px;
+    }
+    
+/*Home ===================================================================*/
+    
+    
+    .home{
+        max-width: 1220px;
+    }
+       
+    .hello { 
+        display: none;
+ 
+    }
+
+    h1{
+       font-size: 2em;
+    }
+    
+    h1 span{
+        font-size: 0.5em;
+    }
+
+    .bigLogo img{;
+        margin-top: 80px;
+    }
+
+    .home h2{
+        line-height: 3em;
+        font-size: 3em;
+    }
+
+    .bigLogo{
+        width: 300px;
+        height: 300px;
+    
+    }
+
+    nav a{
+        line-height: 1    ;
+        font-size: 4em;
+    }
+    
+    nav{
+        position: absolute;
+        top: 35px; right: 35px;
+    }
+
+
+    
+/*Works ===================================================================*/
+    
+/*
+    .owl-dot{
+        width: 26;
+        height: 3;
+        background-color: #d8d8d8;
+        margin: 0 6;
+        
+    } 
+*/
+    .works{padding-bottom: 0;}
+    .works .titre{
+        margin: 60px 0 0;
+    }
+    
+    h7{
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        color: #414141;
+        line-height: 2em;
+        font-size: 1.1em;
+        margin: 0;
+        margin-top: 24px;
+        margin-bottom: 6px;
+        padding: 0 0 0 10px;
+    }
+    
+    .owl-carousel{
+        margin-bottom: 32px;
+    }
+
+
+/*Citation ===================================================================*/
+    .citation p{
+        font-size: 1.6em;
+        line-height: 1.2;
+    }
+
+    .citation p:last-child {
+        font-size: 1.4em;
+    }
+    
+    .citation{max-width: 100%;}
+
+
+
+/*About ===================================================================*/
+    .FiletG{margin-right: 16px;}
+    .FiletD{margin-left: 16px;}
+
+    .experiences{background: url(../img/Filet_Experiences.gif) no-repeat 0 45px,}
+
+    .about hr{margin: 16px auto 0;}
+    .col{
+        margin-right: 0;
+        margin-top: 18px;
+    }
+
+    .rubrique:first-child {margin-right: 0;}
+    .rubrique{
+        background: url(../img/Filet_Experiences.gif) no-repeat 0 45px,;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .rubriqueContainer{text-align: center;}
+    .diplomes{margin-top: 50px;}
+    
+    .colGauche {text-align: center;}
+    .colDroite {text-align: center;}
+    
+    .colGauche .ptiLosange {margin: 10px auto;}
+    .colDroite .ptiLosange {margin: 10px auto;}
+    
+
+
+
+/*Contacts ===================================================================*/
+    .contact{padding-top: 120px;}
+
+/*Footer ===================================================================*/
+    footer{padding-top: 100px;}
+
+
+
+
+
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
