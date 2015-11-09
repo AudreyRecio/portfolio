@@ -148,47 +148,12 @@ var totalProjets=6;
 			});
     
 // Menu Book
-    
-//var menu_ul = $('.menu > li > ul'),
-//    menu_a  = $('.menu > li > a');
-//    menu_ul.hide();
-//    menu_a.click(function(e) {
-//        e.preventDefault();
-//        if(!$(this).hasClass('active')) {
-//            menu_a.removeClass('active');
-//            menu_ul.filter(':visible').slideUp('normal');
-//            $(this).addClass('active').next().stop(true,true).slideDown('normal');
-//        } else {
-//            $(this).removeClass('active');
-//            $(this).next().stop(true,true).slideUp('normal');
-//        }
-//    });
-    
-//    $('#dropdown1').on('click',function(){
-// 
-//      $('.dropdownwrap1').slideToggle();
-// 
-//   });
-//    
-//    $('#dropdown2').on('click',function(){
-// 
-//      $('.dropdownwrap2').slideDown();
-// 
-//   });
-//    
+        
      $('.ProjetVign1').on('click',function(){
  
       $('.ProjetOuvert1').slideToggle();
  
    });
-    
-//var projetactif;
-//var totalProjets=2;
-//    
-//    $('.ProjetVign').on('click',function(){
-//		projetactif=Number($(this).data('projet'));
-//		$('.ProjetOuvert').find('.projet'+projetactif).slideToggle();
-//	});
 
 });
 
