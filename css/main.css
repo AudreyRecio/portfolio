@@ -1049,7 +1049,7 @@ h6 span{
     .experiences div:last-child{margin-right: 0;}
 
     .colGauche{
-        width: 320px;
+        width: 170px;
         display: inline-block;
         text-align: left;
         color: #ff3366;
@@ -1057,10 +1057,10 @@ h6 span{
 
     .colGauche .ptiLosange{margin: 10px 0px 8px 25px;}
 
-    .colDroite .ptiLosange{margin: 10px 0px 8px 140px;}
+    .colDroite .ptiLosange{margin: 10px 0px 8px 295px;}
 
     .colDroite{
-        width: 170px;
+        width: 320px;
         display: inline-block;
         text-align: right;
         color: #ff3366;
@@ -1366,11 +1366,7 @@ footer p{
     .rubriqueContainer{text-align: center;}
     .diplomes{margin-top: 50px;}
     
-    .colGauche {text-align: center;}
-    .colDroite {text-align: center;}
     
-    .colGauche .ptiLosange {margin: 10px auto;}
-    .colDroite .ptiLosange {margin: 10px auto;}
     
 
 
@@ -1384,6 +1380,18 @@ footer p{
 
 
 
+
+}
+
+@media only screen and (max-width: 544px) {
+    
+    .colGauche {text-align: center;}
+    .colDroite {text-align: center;}
+    
+    .colGauche .ptiLosange {margin: 10px auto;}
+    .colDroite .ptiLosange {margin: 10px auto;}
+    
+    .ptiLosangeM {display: inline-block;}
 
 }
 
