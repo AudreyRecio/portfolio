@@ -688,7 +688,6 @@ h6 span{
 
     .infosProjet p{
         font-size: 1.1em;
-        text-align: justify;
     }
 
     .infosProjet h3{
@@ -863,7 +862,7 @@ h6 span{
         max-width: 1000px;
         margin: 0 auto 50px;
         text-align: center;
-        background: url(../img/Filet_Experiences.gif) no-repeat 0 45px, url(../img/Filet_Col_About.gif) no-repeat 245px 154px, url(../img/Filet_Col_About.gif) no-repeat 500px 154px, url(../img/Filet_Col_About.gif) no-repeat 755px 154px;
+        background: url(../img/Filet_Experiences.gif) no-repeat 0 45px, url(../img/Filets_Col_About.gif) no-repeat 245px 154px, url(../img/Filets_Col_About.gif) no-repeat 500px 154px, url(../img/Filets_Col_About.gif) no-repeat 755px 154px;
     }
 
     .rubriqueContainer{
@@ -1041,7 +1040,7 @@ footer p{
 
 
 
-@media only screen and (max-width: 1220px) {
+@media only screen and (max-width: 1199px) {
     
 /*Global ===================================================================*/
     
