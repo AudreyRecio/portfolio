@@ -84,7 +84,7 @@ $(function(){
 
 
 var projetactif;
-var totalProjets=6;
+var totalProjets=9;
     
     
     $('.Vign').on('click',function(){
