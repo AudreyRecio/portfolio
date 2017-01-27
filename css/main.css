@@ -938,6 +938,8 @@ h6 span{
 
     .colAbout li{display: block;}
 
+.colAbout ul{margin-top: 5px;}
+
     .ptiLosangeM {display: none;}
 
     .rubrique .txtNote{
